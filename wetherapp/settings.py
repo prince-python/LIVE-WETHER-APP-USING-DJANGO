@@ -26,10 +26,7 @@ SECRET_KEY = 'django-insecure-$j&!@kdgviotdi#pw@eiw$wqwwk@a@p+wb-m@h6yvs2o+u1!tq
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
-MEDIA_URLS ='/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -52,7 +49,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'wetherapp.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
